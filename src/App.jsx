@@ -1,7 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
 const App = () => {
   return (
-    <div className='h-screen flex justify-center items-center text-6xl font-semibold text-blue-500'>
-      Dashboard
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <h1>App</h1>
+      </BrowserRouter>
     </div>
   );
 };

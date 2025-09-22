@@ -1,1 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
+
+:root {
+  --color-primary: hsl(217, 100%, 42%);
+  --color-primary-light: hsl(217, 100%, 61%);
+  --color-primary-dark: hsl(217, 100%, 30%);
+  --color-primary-foreground: hsl(215, 25%, 88%);
+
+  --color-secondary: hsl(188, 96%, 43%);
+  --color-accent: hsl(38, 95%, 50%);
+
+  --color-background: hsl(220, 40%, 96%);
+  --color-surface: hsl(0, 0%, 100%);
+
+  --color-txt-primary: hsl(222, 25%, 15%);
+  --color-txt-secondary: hsl(215, 15%, 45%);
+}
+
+.dark {
+  --color-primary: hsl(217, 100%, 42%);
+  --color-primary-light: hsl(217, 100%, 61%);
+  --color-primary-dark: hsl(217, 100%, 30%);
+  --color-primary-foreground: hsl(215, 25%, 88%);
+
+  --color-secondary: hsl(188, 96%, 43%);
+  --color-accent: hsl(38, 95%, 50%);
+
+  --color-background: hsl(222, 47%, 11%);
+  --color-surface: hsl(222, 40%, 15%);
+
+  --color-txt-primary: hsl(215, 25%, 88%);
+  --color-txt-secondary: hsl(217, 20%, 60%);
+}
+
+@theme {
+  /* remove default tailwind colors:  */
+  --color-*: initial;
+
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-primary-foreground: var(--color-primary-foreground);
+
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+
+  --color-txt-primary: var(--color-txt-primary);
+  --color-txt-secondary: var(--color-txt-secondary);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-txt-primary;
+    font-family: "Inter", sans-serif;
+  }
+}
