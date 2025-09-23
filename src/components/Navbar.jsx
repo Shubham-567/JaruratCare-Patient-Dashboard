@@ -26,8 +26,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className='fixed top-0 left-0 right-0 bg-surface'>
-      <nav className='flex items-center justify-between gap-4 py-3 px-12'>
+    <header className='fixed top-0 left-0 right-0 bg-surface/80 backdrop-blur-xl z-40'>
+      <nav className='flex items-center justify-between gap-4 py-3 px-6 sm:px-12'>
         <NavLink to='/' className='flex items-center gap-2'>
           <HeartPulse className='size-8 text-primary' />
           <span className='text-2xl font-bold'>Jarurat Care</span>
