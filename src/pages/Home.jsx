@@ -41,7 +41,7 @@ const features = [
 
 const Home = () => {
   return (
-    <main className='px-6 sm:px-12'>
+    <main className='px-6 sm:px-13 md:px-18 lg:px-26'>
       {/* Hero Section */}
       <section className='min-h-screen flex flex-col justify-center items-center'>
         <div className='max-w-4xl mx-auto text-center'>
@@ -54,7 +54,7 @@ const Home = () => {
             give healthcare professionals the clarity and control they need.
           </p>
           <Link to='/patients'>
-            <Button variant='primary'>
+            <Button variant='primary' className='px-6 py-3'>
               Explore The Dashboard <ArrowRight />
             </Button>
           </Link>
@@ -72,7 +72,7 @@ const Home = () => {
           security.
         </p>
 
-        <div className='grid grid-colo-2 lg:grid-cols-3 max-w-6xl mx-auto gap-4 mt-10'>
+        <div className='grid grid-colo-2 lg:grid-cols-3 max-w-7xl mx-auto gap-4 mt-10'>
           <div className='md:col-span-2'>
             <FeatureCard
               title={features[0].title}
@@ -113,7 +113,7 @@ const Home = () => {
           transforming workflows.
         </p>
 
-        <div className='grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 max-w-6xl mx-auto mt-10'>
+        <div className='grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 max-w-7xl mx-auto mt-10'>
           {/* review card */}
           <div className='col-span-2 lg:col-span-1 row-span-2 card space-y-2'>
             <Quote className='size-8 text-primary' />

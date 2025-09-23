@@ -1,5 +1,3 @@
-import React from "react";
-
 const Button = ({
   children,
   onClick,
@@ -9,14 +7,14 @@ const Button = ({
 }) => {
   const variants = {
     primary:
-      "bg-primary hover:bg-primary-dark text-primary-foreground sm:text-lg font-bold rounded-4xl hover:-translate-y-1 transition-all duration-300",
+      "bg-primary hover:bg-primary-dark text-primary-foreground rounded-4xl hover:-translate-y-1 ",
     secondary:
-      "bg-surface text-primary text-lg rounded-4xl font-bold hover:bg-surface",
+      "bg-primary/10 hover:bg-primary/20 text-primary-light rounded-lg",
   };
 
   return (
     <button
-      className={`px-6 py-3 cursor-pointer inline-flex items-center gap-2 ${variants[variant]} ${className}`}
+      className={`font-bold cursor-pointer inline-flex items-center justify-center gap-2 transition-all duration-300 ${variants[variant]} ${className}`}
       onClick={onClick}
       {...rest}>
       {children}

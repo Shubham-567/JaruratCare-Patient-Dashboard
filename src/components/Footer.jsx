@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className='bg-surface/80 flex flex-col justify-center items-center gap-4 py-6 px-6 sm:px-12 divide-y divide-txt-secondary/50'>
+    <footer className='bg-surface/80 flex flex-col justify-center items-center gap-4 py-6 px-6 sm:px-13 md:px-18 lg:px-26 divide-y divide-txt-secondary/50'>
       <div className='flex justify-between items-center gap-4 w-full pb-6'>
         <div className='space-y-2'>
           <div className='flex items-center gap-4'>
@@ -38,7 +38,9 @@ const Footer = () => {
             <a href='#'>
               <Facebook className='size-6 hover:text-primary' />
             </a>
-            <a href='https://github.com/Shubham-567/JaruratCare-Patient-Dashboard'>
+            <a
+              target='_blank'
+              href='https://github.com/Shubham-567/JaruratCare-Patient-Dashboard'>
               <Github className='size-6 hover:text-primary' />
             </a>
           </div>

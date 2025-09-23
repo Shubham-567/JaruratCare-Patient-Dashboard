@@ -73,6 +73,6 @@
   }
 
   .card {
-    @apply bg-surface p-6 sm:p-8 rounded-2xl hover:ring ring-primary/50 hover:-translate-y-1 transition-all duration-300 ease-linear;
+    @apply bg-surface p-6 sm:p-8 rounded-xl ring ring-txt-secondary/20 hover:ring-primary/60 hover:-translate-y-1 transition-all duration-300 ease-linear;
   }
 }

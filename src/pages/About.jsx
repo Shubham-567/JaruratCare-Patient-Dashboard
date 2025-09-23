@@ -24,7 +24,7 @@ const teamMembers = [
 
 const About = () => {
   return (
-    <main className='px-6 sm:px-12 mt-18'>
+    <main className='px-6 sm:px-13 md:px-18 lg:px-26 mt-18'>
       {/* Hero Section */}
       <section className='py-10 text-center'>
         <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold'>
@@ -38,7 +38,7 @@ const About = () => {
 
       {/* Mission and Story section */}
       <section className='py-10'>
-        <div className='relative card flex max-md:flex-col items-start gap-8 max-w-6xl mx-auto'>
+        <div className='relative card flex max-md:flex-col items-start gap-8 max-w-7xl mx-auto'>
           {/* Mission  */}
           <div>
             <div className='flex items-center gap-4'>
@@ -95,7 +95,7 @@ const About = () => {
         </p>
 
         {/* Team members */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto py-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto py-6'>
           {teamMembers.map((member) => (
             <TeamCard
               key={member.name}
