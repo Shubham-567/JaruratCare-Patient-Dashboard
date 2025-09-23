@@ -62,7 +62,7 @@ const Home = () => {
       </section>
 
       {/* features section with bento grid */}
-      <section className='min-h-screen'>
+      <section className='min-h-screen py-10'>
         <h2 className='section-heading'>
           Everything you need. Nothing you don't.
         </h2>
@@ -72,7 +72,7 @@ const Home = () => {
           security.
         </p>
 
-        <div className='grid grid-colo-2 lg:grid-cols-3 max-w-6xl mx-auto gap-4 py-10'>
+        <div className='grid grid-colo-2 lg:grid-cols-3 max-w-6xl mx-auto gap-4 mt-10'>
           <div className='md:col-span-2'>
             <FeatureCard
               title={features[0].title}
@@ -106,14 +106,14 @@ const Home = () => {
       </section>
 
       {/* impact section */}
-      <section className='min-h-screen'>
+      <section className='min-h-screen py-10'>
         <h2 className='section-heading'>Making a Measurable Difference</h2>
         <p className='section-description'>
           From individual clinics to large hospitals, Jarurat Care is
           transforming workflows.
         </p>
 
-        <div className='grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 max-w-6xl mx-auto py-10'>
+        <div className='grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 max-w-6xl mx-auto mt-10'>
           {/* review card */}
           <div className='col-span-2 lg:col-span-1 row-span-2 card space-y-2'>
             <Quote className='size-8 text-primary' />
