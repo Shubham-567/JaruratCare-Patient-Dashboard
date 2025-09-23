@@ -53,6 +53,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-txt-primary;
     font-family: "Inter", sans-serif;

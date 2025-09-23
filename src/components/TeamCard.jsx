@@ -1,5 +1,4 @@
 import { Linkedin, Twitter } from "lucide-react";
-import React from "react";
 
 const TeamCard = ({ name, role, bio, avatarUrl }) => {
   return (
@@ -14,7 +13,7 @@ const TeamCard = ({ name, role, bio, avatarUrl }) => {
       <p className='text-txt-secondary mt-2'>{bio}</p>
 
       {/* social links */}
-      <div className='flex items-center justify-center gap-4 mt-4'>
+      <div className='flex items-center justify-center gap-4 mt-4 text-txt-secondary'>
         <a href='#'>
           <Linkedin className='size-6 hover:text-primary' />
         </a>
