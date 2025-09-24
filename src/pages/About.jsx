@@ -1,5 +1,6 @@
 import { BookOpen, Target } from "lucide-react";
 import TeamCard from "../components/TeamCard";
+import CallToAction from "../components/CallToAction";
 
 const teamMembers = [
   {
@@ -107,6 +108,9 @@ const About = () => {
           ))}
         </div>
       </section>
+
+      {/* call to action  */}
+      <CallToAction />
     </main>
   );
 };

@@ -1,3 +1,32 @@
+import { Sparkles, ShieldCheck, LayoutDashboard, Activity } from "lucide-react";
+
+export const features = [
+  {
+    title: "AI-Powered Insights",
+    description:
+      "Automatically highlight critical patient data, potential risks, and follow-up reminders. Let our AI assist in proactive care.",
+    icon: <Sparkles className='size-6 text-primary' />,
+  },
+  {
+    title: "Bank-Grade Security",
+    description:
+      "Your data is encrypted end-to-end, ensuring compliance and peace of mind.",
+    icon: <ShieldCheck className='size-6 text-primary' />,
+  },
+  {
+    title: "Customizable Views",
+    description:
+      "Tailor the dashboard to your needs. Prioritize what's most important for your workflow.",
+    icon: <LayoutDashboard className='size-6 text-primary' />,
+  },
+  {
+    title: "Real-Time Analytics",
+    description:
+      "Monitor patient vitals and trends with our live, easy-to-read charts and graphs. Gain insights to optimize care.",
+    icon: <Activity className='size-6 text-primary' />,
+  },
+];
+
 export const patientsData = [
   {
     id: 1,

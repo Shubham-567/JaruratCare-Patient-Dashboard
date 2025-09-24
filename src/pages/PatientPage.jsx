@@ -47,7 +47,7 @@ const PatientPage = () => {
   }, [selectedPatient]);
 
   return (
-    <main className='min-h-screen pt-18 px-6 sm:px-13 md:px-18 lg:px-26'>
+    <main className='pt-18 px-6 sm:px-13 md:px-18 lg:px-26'>
       <section className='pt-10 text-start'>
         <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold'>Patients</h1>
         <p className='py-3 max-w-xl sm:text-lg text-txt-secondary'>
@@ -56,7 +56,7 @@ const PatientPage = () => {
         </p>
       </section>
 
-      <section className='py-10 mb-6 space-y-6'>
+      <section className='py-10 min-h-140 space-y-6'>
         {/* Search Bar */}
         <div className='bg-surface p-4 sm:p-6 rounded-xl ring ring-txt-secondary/20 flex items-center gap-4'>
           <div className='relative flex-1'>

@@ -1,49 +1,19 @@
 import Button from "../components/Button";
-import {
-  ArrowRight,
-  Sparkles,
-  ShieldCheck,
-  LayoutDashboard,
-  Activity,
-  Quote,
-  Clock,
-  Users,
-} from "lucide-react";
+import { ArrowRight, ShieldCheck, Quote, Clock, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import FeatureCard from "../components/FeatureCard";
-
-const features = [
-  {
-    title: "AI-Powered Insights",
-    description:
-      "Automatically highlight critical patient data, potential risks, and follow-up reminders. Let our AI assist in proactive care.",
-    icon: <Sparkles className='size-6 text-primary' />,
-  },
-  {
-    title: "Bank-Grade Security",
-    description:
-      "Your data is encrypted end-to-end, ensuring compliance and peace of mind.",
-    icon: <ShieldCheck className='size-6 text-primary' />,
-  },
-  {
-    title: "Customizable Views",
-    description:
-      "Tailor the dashboard to your needs. Prioritize what's most important for your workflow.",
-    icon: <LayoutDashboard className='size-6 text-primary' />,
-  },
-  {
-    title: "Real-Time Analytics",
-    description:
-      "Monitor patient vitals and trends with our live, easy-to-read charts and graphs. Gain insights to optimize care.",
-    icon: <Activity className='size-6 text-primary' />,
-  },
-];
+import CallToAction from "../components/CallToAction";
+import { features } from "../constants";
 
 const Home = () => {
   return (
     <main className='px-6 sm:px-13 md:px-18 lg:px-26'>
       {/* Hero Section */}
-      <section className='min-h-screen flex flex-col justify-center items-center'>
+      <section className='relative py-26 my-26 flex flex-col justify-center items-center'>
+        {/* background blobs */}
+        <div className='max-md:hidden absolute top-0 left-0 size-80 bg-primary/30 blur-[100px] rounded-full -z-10'></div>
+        <div className='max-md:hidden absolute bottom-0 right-0 size-80 bg-primary/30 blur-[100px] rounded-full -z-10'></div>
+
         <div className='max-w-4xl mx-auto text-center'>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold'>
             The Future of Patient <br />
@@ -62,7 +32,7 @@ const Home = () => {
       </section>
 
       {/* features section with bento grid */}
-      <section className='min-h-screen py-10'>
+      <section className='py-10 my-10'>
         <h2 className='section-heading'>
           Everything you need. Nothing you don't.
         </h2>
@@ -106,7 +76,7 @@ const Home = () => {
       </section>
 
       {/* impact section */}
-      <section className='min-h-screen py-10'>
+      <section className='py-10 my-10'>
         <h2 className='section-heading'>Making a Measurable Difference</h2>
         <p className='section-description'>
           From individual clinics to large hospitals, Jarurat Care is
@@ -164,6 +134,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* call to action  */}
+      <CallToAction />
     </main>
   );
 };
