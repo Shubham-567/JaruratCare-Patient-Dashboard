@@ -73,13 +73,13 @@ const Navbar = () => {
       {/* mobile menu */}
       {isOpen && (
         <div className='md:hidden fixed top-16 left-0 w-full min-h-[92vh] flex items-center justify-center bg-background/80 backdrop-blur-xs'>
-          <div className='flex flex-col gap-12'>
+          <div className='flex flex-col gap-12 pb-20'>
             {links.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  `flex flex-col items-center text-4xl tracking-wide font-semibold font-mono ${
+                  `flex flex-col items-center text-4xl tracking-wide font-bold ${
                     isActive ? "text-primary" : ""
                   }`
                 }

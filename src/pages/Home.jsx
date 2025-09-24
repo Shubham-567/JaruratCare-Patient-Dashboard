@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <main className='px-6 sm:px-13 md:px-18 lg:px-26'>
       {/* Hero Section */}
-      <section className='relative py-26 my-26 flex flex-col justify-center items-center'>
+      <section className='relative py-26 my-26 min-h-[400px] flex flex-col justify-center items-center'>
         {/* background blobs */}
         <div className='max-md:hidden absolute top-0 left-0 size-80 bg-primary/30 blur-[100px] rounded-full -z-10'></div>
         <div className='max-md:hidden absolute bottom-0 right-0 size-80 bg-primary/30 blur-[100px] rounded-full -z-10'></div>

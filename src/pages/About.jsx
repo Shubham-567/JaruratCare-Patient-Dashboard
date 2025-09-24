@@ -27,11 +27,11 @@ const About = () => {
   return (
     <main className='px-6 sm:px-13 md:px-18 lg:px-26 mt-18'>
       {/* Hero Section */}
-      <section className='py-10 text-center'>
+      <section className='py-10 pb-2'>
         <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold'>
           About Jarurat Care
         </h1>
-        <p className='py-3 max-w-xl mx-auto sm:text-lg text-txt-secondary'>
+        <p className='py-3 max-w-xl sm:text-lg text-txt-secondary'>
           Empowering healthcare professionals with tools as intelligent and
           dedicated as they are.
         </p>
