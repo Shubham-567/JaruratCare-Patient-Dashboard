@@ -8,7 +8,7 @@ export const patientsData = [
     email: "aarav.sharma@gmail.com",
     address: { street: "123 MG Road", city: "Mumbai", zipCode: "400001" },
     medicalHistory: {
-      lastVisit: "2023-10-15",
+      lastVisit: "15-10-2023",
       conditions: ["Hypertension", "Type 2 Diabetes"],
       allergies: ["Penicillin"],
     },
@@ -23,7 +23,7 @@ export const patientsData = [
     email: "priya.patel@gmail.com",
     address: { street: "456 Park Street", city: "Delhi", zipCode: "110001" },
     medicalHistory: {
-      lastVisit: "2024-01-20",
+      lastVisit: "20-01-2024",
       conditions: ["Asthma"],
       allergies: ["Pollen", "Dust Mites"],
     },
@@ -38,7 +38,7 @@ export const patientsData = [
     email: "rohan.singh@gmail.com",
     address: { street: "789 Lake View", city: "Bangalore", zipCode: "560001" },
     medicalHistory: {
-      lastVisit: "2023-11-05",
+      lastVisit: "05-11-2023",
       conditions: ["Arthritis"],
       allergies: [],
     },
@@ -53,7 +53,7 @@ export const patientsData = [
     email: "saanvi.gupta@gmail.com",
     address: { street: "101 River Side", city: "Kolkata", zipCode: "700001" },
     medicalHistory: {
-      lastVisit: "2024-02-10",
+      lastVisit: "10-02-2024",
       conditions: ["Migraine"],
       allergies: ["Shellfish"],
     },
@@ -68,7 +68,7 @@ export const patientsData = [
     email: "arjun.reddy@gmail.com",
     address: { street: "212 Hill Top", city: "Hyderabad", zipCode: "500001" },
     medicalHistory: {
-      lastVisit: "2023-12-22",
+      lastVisit: "22-12-2023",
       conditions: ["Coronary Artery Disease"],
       allergies: ["Aspirin"],
     },
@@ -83,7 +83,7 @@ export const patientsData = [
     email: "diya.mehta@gmail.com",
     address: { street: "313 Ocean Drive", city: "Chennai", zipCode: "600001" },
     medicalHistory: {
-      lastVisit: "2024-03-01",
+      lastVisit: "01-03-2024",
       conditions: [],
       allergies: ["Peanuts"],
     },
@@ -98,7 +98,7 @@ export const patientsData = [
     email: "vihaan.kumar@gmail.com",
     address: { street: "414 Valley Road", city: "Pune", zipCode: "411001" },
     medicalHistory: {
-      lastVisit: "2023-09-30",
+      lastVisit: "30-09-2023",
       conditions: ["Hypothyroidism"],
       allergies: [],
     },
@@ -117,7 +117,7 @@ export const patientsData = [
       zipCode: "380001",
     },
     medicalHistory: {
-      lastVisit: "2024-01-05",
+      lastVisit: "05-01-2024",
       conditions: ["Osteoporosis"],
       allergies: ["Sulfa drugs"],
     },

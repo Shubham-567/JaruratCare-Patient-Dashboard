@@ -3,12 +3,15 @@ import { patientsData } from "../constants";
 import PatientCard from "../components/PatientCard";
 import { Plus, Search } from "lucide-react";
 import Button from "../components/Button";
+import PatientDetailsModal from "../components/PatientDetailsModal";
 
 const PatientPage = () => {
   const [patients, setPatients] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchInput, setSearchInput] = useState("");
+  const [showModal, setShowModal] = useState(false);
+  const [selectedPatient, setSelectedPatient] = useState(null);
 
   // simulation of api fetching patients data from contents.js
   useEffect(() => {
@@ -33,6 +36,15 @@ const PatientPage = () => {
 
     setPatients(filteredPatients);
   };
+
+  const handleViewDetails = (patient) => {
+    setShowModal(true);
+    setSelectedPatient(patient);
+  };
+
+  useEffect(() => {
+    console.log(selectedPatient);
+  }, [selectedPatient]);
 
   return (
     <main className='min-h-screen pt-18 px-6 sm:px-13 md:px-18 lg:px-26'>
@@ -80,11 +92,25 @@ const PatientPage = () => {
         ) : (
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
             {patients.map((patient) => (
-              <PatientCard patient={patient} />
+              <PatientCard
+                key={patient.id}
+                patient={patient}
+                handleViewDetails={() => handleViewDetails(patient)}
+              />
             ))}
           </div>
         )}
       </section>
+
+      {showModal && (
+        <PatientDetailsModal
+          patient={selectedPatient}
+          onCLose={() => {
+            setShowModal(false);
+            setSelectedPatient(null);
+          }}
+        />
+      )}
     </main>
   );
 };

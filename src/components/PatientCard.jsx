@@ -1,7 +1,7 @@
 import { Phone } from "lucide-react";
 import Button from "./Button";
 
-const PatientCard = ({ patient }) => {
+const PatientCard = ({ patient, handleViewDetails }) => {
   if (!patient) {
     return null;
   }
@@ -51,7 +51,10 @@ const PatientCard = ({ patient }) => {
       </div>
 
       <div className='border-t border-txt-secondary/20 mt-4 px-4 pt-4'>
-        <Button variant='secondary' className='px-4 py-2 w-full'>
+        <Button
+          variant='secondary'
+          className='px-4 py-2 w-full'
+          onClick={handleViewDetails}>
           View Details
         </Button>
       </div>
