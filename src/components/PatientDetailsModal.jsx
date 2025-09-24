@@ -15,7 +15,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
   }
 
   // handle outside click
-  
+
   const modalRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +31,6 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
   }, [onCLose]);
 
   return (
-    //modal
     <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-background/50 z-50'>
       <div
         ref={modalRef}
@@ -79,7 +78,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
                 <p className='text-sm text-txt-secondary'>Address</p>
                 <p className='text-sm font-bold'>
                   {patient.address.street}, {patient.address.city},{" "}
-                  {patient.address.zipCode}
+                  {patient.address.pinCode}
                 </p>
               </div>
             </div>
@@ -116,8 +115,10 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
                 <p className='text-sm w-full font-bold flex flex-wrap items-center justify-between gap-2'>
                   {patient.medicalHistory.conditions.length === 0
                     ? "-"
-                    : patient.medicalHistory.conditions.map((condition) => (
-                        <span className='text-xs font-bold px-2 py-1 rounded-4xl text-primary bg-primary/20'>
+                    : patient.medicalHistory.conditions.map((condition, i) => (
+                        <span
+                          key={i + 1}
+                          className='text-xs font-bold px-2 py-1 rounded-4xl text-primary bg-primary/20'>
                           {condition}
                         </span>
                       ))}
@@ -132,8 +133,8 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
                 <p className='text-sm font-bold flex flex-wrap items-center justify-between gap-2'>
                   {patient.medicalHistory.allergies.length === 0
                     ? "-"
-                    : patient.medicalHistory.allergies.map((allergy) => (
-                        <span className='text-xs font-bold px-2 py-1 rounded-4xl text-primary bg-primary/20 text-nowrap'>
+                    : patient.medicalHistory.allergies.map((allergy, i) => (
+                        <span key={i + 1} className='text-xs font-bold px-2 py-1 rounded-4xl text-primary bg-primary/20 text-nowrap'>
                           {allergy}
                         </span>
                       ))}

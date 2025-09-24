@@ -4,13 +4,15 @@ import PatientCard from "../components/PatientCard";
 import { Plus, Search } from "lucide-react";
 import Button from "../components/Button";
 import PatientDetailsModal from "../components/PatientDetailsModal";
+import AddPatientModal from "../components/AddPatientModal";
 
 const PatientPage = () => {
   const [patients, setPatients] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchInput, setSearchInput] = useState("");
-  const [showModal, setShowModal] = useState(false);
+  const [showDetailsModal, setShowDetailsModal] = useState(false);
+  const [showAddPatientModal, setShowAddPatientModal] = useState(false);
   const [selectedPatient, setSelectedPatient] = useState(null);
 
   // simulation of api fetching patients data from contents.js
@@ -38,13 +40,9 @@ const PatientPage = () => {
   };
 
   const handleViewDetails = (patient) => {
-    setShowModal(true);
+    setShowDetailsModal(true);
     setSelectedPatient(patient);
   };
-
-  useEffect(() => {
-    console.log(selectedPatient);
-  }, [selectedPatient]);
 
   return (
     <main className='pt-18 px-6 sm:px-13 md:px-18 lg:px-26'>
@@ -70,7 +68,10 @@ const PatientPage = () => {
             />
           </div>
 
-          <Button variant='primary' className='text-sm px-4 py-2'>
+          <Button
+            variant='primary'
+            className='text-sm px-4 py-2'
+            onClick={() => setShowAddPatientModal(true)}>
             <Plus className='size-6' />
             Add Patients
           </Button>
@@ -102,13 +103,20 @@ const PatientPage = () => {
         )}
       </section>
 
-      {showModal && (
+      {showDetailsModal && (
         <PatientDetailsModal
           patient={selectedPatient}
           onCLose={() => {
-            setShowModal(false);
+            setShowDetailsModal(false);
             setSelectedPatient(null);
           }}
+        />
+      )}
+
+      {showAddPatientModal && (
+        <AddPatientModal
+          setPatients={setPatients}
+          onCLose={() => setShowAddPatientModal(false)}
         />
       )}
     </main>

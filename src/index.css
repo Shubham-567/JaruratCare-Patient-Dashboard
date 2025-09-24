@@ -52,6 +52,16 @@
   --color-txt-secondary: var(--color-txt-secondary);
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

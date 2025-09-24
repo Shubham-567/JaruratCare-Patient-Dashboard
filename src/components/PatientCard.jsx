@@ -5,30 +5,6 @@ const PatientCard = ({ patient, handleViewDetails }) => {
   if (!patient) {
     return null;
   }
-  //   {
-  //     "id": 1,
-  //     "name": "Aarav Sharma",
-  //     "age": 45,
-  //     "gender": "Male",
-  //     "contact": "987-654-3210",
-  //     "email": "aarav.sharma@example.com",
-  //     "address": {
-  //         "street": "123 MG Road",
-  //         "city": "Mumbai",
-  //         "zipCode": "400001"
-  //     },
-  //     "medicalHistory": {
-  //         "lastVisit": "2023-10-15",
-  //         "conditions": [
-  //             "Hypertension",
-  //             "Type 2 Diabetes"
-  //         ],
-  //         "allergies": [
-  //             "Penicillin"
-  //         ]
-  //     },
-  //     "avatarUrl": "https://picsum.photos/seed/aarav/200"
-  // }
 
   return (
     <div className='card px-0 py-4'>
