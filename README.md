@@ -1,12 +1,70 @@
-# React + Vite
+# Jarurat Care
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive dashboard for viewing and managing patient records, built with React and styled with Tailwind CSS. This project fetches data mock JSON.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+**Live Site:** [https://jarurat-patient-dashboard.vercel.app/](https://jarurat-patient-dashboard.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- **View Patients:** Fetches and displays a list of patients in a clean, responsive grid.
+- **Live Search:** Instantly filter patients by name using the search bar.
+- **Add Patients:** A simple form to add new patients to the list (local state only).
+- **Responsive Design:** Looks great on both desktop and mobile devices.
+
+---
+
+## Tech Stack
+
+- **React** (Vite)
+- **React Router DOM** for page navigation
+- **Tailwind CSS** for styling
+- **Lucide React** for icons
+
+---
+
+## Getting Started
+
+Follow these steps to get the project running on your local machine.
+
+### Prerequisites
+
+You need to have **Node.js** (v14 or higher) installed on your computer.
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+
+    ```sh
+    git clone https://github.com/Shubham-567/JaruratCare-Patient-Dashboard.git
+    ```
+
+2.  **Navigate to the project directory:**
+
+    ```sh
+    cd JaruratCare-Patient-Dashboard
+    ```
+
+3.  **Install the dependencies:**
+
+    ```sh
+    npm install
+    ```
+
+4.  **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+
+Your application should now be running! Open your browser and go to `http://localhost:5173` (or the address provided by Vite).
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
