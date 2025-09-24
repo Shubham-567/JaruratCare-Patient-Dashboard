@@ -14,7 +14,7 @@ const Button = ({
 
   return (
     <button
-      className={`font-bold cursor-pointer inline-flex items-center justify-center gap-2 transition-all duration-300 ${variants[variant]} ${className}`}
+      className={`text-sm sm:text-basefont-bold cursor-pointer inline-flex items-center justify-center gap-2 transition-all duration-300 ${variants[variant]} ${className}`}
       onClick={onClick}
       {...rest}>
       {children}

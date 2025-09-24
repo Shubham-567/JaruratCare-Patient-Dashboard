@@ -7,7 +7,7 @@ const PatientCard = ({ patient, handleViewDetails }) => {
   }
 
   return (
-    <div className='card px-0 py-4'>
+    <div className='card px-0 py-4 flex flex-col justify-between'>
       <div className='flex items-center gap-4 px-4'>
         <img
           src={patient.avatarUrl}

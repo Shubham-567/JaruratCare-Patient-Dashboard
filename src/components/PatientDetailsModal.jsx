@@ -31,10 +31,10 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
   }, [onCLose]);
 
   return (
-    <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-background/50 z-50'>
+    <div className='fixed top-0 left-0 w-full h-full px-6 flex items-center justify-center bg-background/50 z-50'>
       <div
         ref={modalRef}
-        className='relative bg-surface p-6 rounded-lg shadow-lg max-w-lg'>
+        className='relative bg-surface p-6 rounded-lg shadow-lg w-full max-w-lg min-w-[300px]'>
         {/* patient Profile  */}
         <div className='flex items-center justify-between gap-4 pb-4'>
           <div className='flex items-center gap-4 px-4'>
@@ -63,7 +63,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
         <div className='my-4'>
           <h4 className='font-semibold mb-3'>Contact Information</h4>
 
-          <div className='grid grid-cols-2 items-start justify-between gap-4'>
+          <div className='grid md:grid-cols-2 items-start justify-between gap-4'>
             <div className='flex items-start gap-4'>
               <Mail className='size-6 text-primary' />
               <div className='space-y-0.5'>
@@ -97,7 +97,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
         <div className='my-4 mt-8'>
           <h4 className='font-semibold mb-3'>Medical History</h4>
 
-          <div className='grid grid-cols-2 items-start justify-between gap-4'>
+          <div className='grid md:grid-cols-2 items-start justify-between gap-4'>
             <div className='flex items-start gap-4'>
               <Calendar className='size-6 text-primary' />
               <div className='space-y-0.5'>
@@ -134,7 +134,9 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
                   {patient.medicalHistory.allergies.length === 0
                     ? "-"
                     : patient.medicalHistory.allergies.map((allergy, i) => (
-                        <span key={i + 1} className='text-xs font-bold px-2 py-1 rounded-4xl text-primary bg-primary/20 text-nowrap'>
+                        <span
+                          key={i + 1}
+                          className='text-xs font-bold px-2 py-1 rounded-4xl text-primary bg-primary/20 text-nowrap'>
                           {allergy}
                         </span>
                       ))}

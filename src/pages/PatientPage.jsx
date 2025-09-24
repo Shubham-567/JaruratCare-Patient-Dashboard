@@ -56,13 +56,13 @@ const PatientPage = () => {
 
       <section className='py-10 min-h-140 space-y-6'>
         {/* Search Bar */}
-        <div className='bg-surface p-4 sm:p-6 rounded-xl ring ring-txt-secondary/20 flex items-center gap-4'>
+        <div className='bg-surface p-4 sm:p-6 rounded-xl ring ring-txt-secondary/20 flex max-sm:flex-col sm:items-center gap-4'>
           <div className='relative flex-1'>
-            <Search className='absolute top-1/2 left-4 -translate-y-1/2 text-txt-secondary/50' />
+            <Search className='absolute top-1/2 left-4 -translate-y-1/2 text-txt-secondary/50 size-5' />
             <input
               type='text'
               placeholder='Search Patient'
-              className='w-full px-4 py-2 pl-14 rounded-lg bg-background border border-txt-secondary/20 focus:outline-none focus:ring-2 focus:ring-primary'
+              className='w-full px-4 py-2 pl-12 rounded-lg bg-background border border-txt-secondary/20 focus:outline-none focus:ring-2 focus:ring-primary'
               value={searchInput}
               onChange={(e) => handleSearch(e)}
             />

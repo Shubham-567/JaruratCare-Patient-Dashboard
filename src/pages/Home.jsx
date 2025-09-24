@@ -87,12 +87,12 @@ const Home = () => {
           {/* review card */}
           <div className='col-span-2 lg:col-span-1 row-span-2 card space-y-2'>
             <Quote className='size-8 text-primary' />
-            <p className='lg:text-lg'>
+            <p className='text-sm sm:text-base lg:text-lg text-txt-secondary'>
               "This platform has revolutionized how we handle patient data. It's
               intuitive, secure, and has genuinely saved us hours every single
               day. I can't imagine our workflow without it."
             </p>
-            <p>
+            <p className='text-sm sm:text-base'>
               <span className='font-semibold'>- Dr. Anjali Rao,</span>
               <br />
               <span className='text-txt-secondary'>

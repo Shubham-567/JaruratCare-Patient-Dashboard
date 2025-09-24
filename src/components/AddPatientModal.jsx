@@ -70,10 +70,10 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
   };
 
   return (
-    <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-background/50 z-50'>
+    <div className='fixed top-0 left-0 w-full h-full px-6 flex items-center justify-center bg-background/50 z-50'>
       <div
         ref={modalRef}
-        className='relative bg-surface pb-6 pt-0 m rounded-lg shadow-lg max-w-lg max-h-[86vh] w-full overflow-y-scroll no-scrollbar'>
+        className='relative bg-surface pb-6 pt-0 m rounded-lg shadow-lg max-w-lg max-h-[86vh] w-full min-w-[300px] overflow-y-scroll no-scrollbar'>
         {/* modal heading */}
         <div className='sticky top-0 bg-surface flex items-center justify-between gap-4 px-6 pt-6 pb-4 z-10 border-b border-txt-secondary/20'>
           <h3 className='text-lg font-semibold'>Add Patient</h3>
@@ -87,7 +87,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
           onSubmit={handleSubmit}
           className='grid grid-cols-2 justify-between items-center gap-4 px-6 my-4'>
           {/* name input */}
-          <div className='col-span-1'>
+          <div className='col-span-2 sm:col-span-1'>
             <label htmlFor='name' className='text-sm text-txt-secondary'>
               Full Name
             </label>
@@ -106,7 +106,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
           </div>
 
           {/* age input */}
-          <div className='col-span-1'>
+          <div className='col-span-2 sm:col-span-1'>
             <label htmlFor='age' className='text-sm text-txt-secondary'>
               Age
             </label>
@@ -125,7 +125,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
           </div>
 
           {/* gender dropdown */}
-          <div className='col-span-1'>
+          <div className='col-span-2 sm:col-span-1'>
             <label htmlFor='gender' className='text-sm text-txt-secondary'>
               Gender
             </label>
@@ -145,7 +145,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
           </div>
 
           {/* contact number */}
-          <div className='col-span-1'>
+          <div className='col-span-2 sm:col-span-1'>
             <label htmlFor='contact' className='text-sm text-txt-secondary'>
               Contact Number
             </label>
@@ -158,7 +158,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
                 setFormData({ ...formData, contact: e.target.value })
               }
               id='contact'
-              placeholder='eg. (+91 76543 21098)'
+              placeholder='eg. (+91 98765 43210)'
               className='w-full bg-background text-sm border border-txt-secondary/50 rounded-md px-4 py-2 mt-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50'
             />
           </div>
@@ -205,7 +205,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
           </div>
 
           {/* city input */}
-          <div className='col-span-1'>
+          <div className='col-span-2 sm:col-span-1'>
             <label htmlFor='city' className='text-sm text-txt-secondary'>
               City Name
             </label>
@@ -227,7 +227,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
           </div>
 
           {/* pin code input */}
-          <div className='col-span-1'>
+          <div className='col-span-2 sm:col-span-1'>
             <label htmlFor='pinCode' className='text-sm text-txt-secondary'>
               Pin Code
             </label>
@@ -250,7 +250,9 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
 
           {/* medical condition input  */}
           <div className='col-span-2'>
-            <label htmlFor='name' className='text-sm text-txt-secondary'>
+            <label
+              htmlFor='medicalCondition'
+              className='text-sm text-txt-secondary'>
               Medical Conditions
             </label>
 
@@ -275,7 +277,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
 
           {/* allergies input  */}
           <div className='col-span-2'>
-            <label htmlFor='name' className='text-sm text-txt-secondary'>
+            <label htmlFor='allergies' className='text-sm text-txt-secondary'>
               Allergies
             </label>
 
