@@ -65,6 +65,46 @@ Your application should now be running! Open your browser and go to `http://loca
 
 ---
 
+## Project Structure
+
+The project follows a standard React application structure.
+
+-   **`src/components`**: Contains reusable UI components like `Navbar`, `Footer`, and `PatientCard`.
+-   **`src/pages`**: Contains the main page components for different routes, such as `Home`, `About`, and `PatientPage`.
+-   **`src/constants.jsx`**: Stores constants and mock data used throughout the application.
+-   **`App.jsx`**: The main application component where routing is handled.
+
+
+```plaintext
+
+JaruratCare-Patient-Dashboard/
+├── src
+│   ├── components
+│   │   ├── AddPatientModal.jsx
+│   │   ├── Button.jsx
+│   │   ├── CallToAction.jsx
+│   │   ├── FeatureCard.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── PatientCard.jsx
+│   │   ├── PatientDetailsModal.jsx
+│   │   └── TeamCard.jsx
+│   ├── pages
+│   │   ├── About.jsx
+│   │   ├── Home.jsx
+│   │   └── PatientPage.jsx
+│   ├── App.jsx
+│   └── constants.jsx
+├── index.html
+├── LICENSE
+├── package.json
+├── README.md
+├── vercel.json
+└── vite.config.js
+```
+
+---
+
 ## License
 
 This project is licensed under the **MIT License**.

@@ -56,7 +56,7 @@ const PatientPage = () => {
         </p>
       </section>
 
-      <section className='py-10 max-sm:min-h-140 min-h-screen space-y-6'>
+      <section className='py-10 max-sm:min-h-140 min-h-[70vh] space-y-6'>
         {/* Search Bar */}
         <div className='bg-surface p-4 sm:p-6 rounded-xl ring ring-txt-secondary/20 flex max-sm:flex-col sm:items-center gap-4'>
           <div className='relative flex-1'>

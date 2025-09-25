@@ -69,6 +69,8 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
     onCLose();
   };
 
+  // <span className='text-danger text-xs'>*</span>
+
   return (
     <div className='fixed top-0 left-0 w-full h-full px-6 flex items-center justify-center bg-background/80 z-50'>
       <div
@@ -99,6 +101,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
               }
+              required
               id='name'
               placeholder='John Doe'
               className='w-full bg-background text-sm border border-txt-secondary/50 rounded-md px-4 py-2 mt-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50'
@@ -118,6 +121,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
               onChange={(e) =>
                 setFormData({ ...formData, age: e.target.value })
               }
+              required
               id='age'
               placeholder='Age'
               className='w-full bg-background text-sm border border-txt-secondary/50 rounded-md px-4 py-2 mt-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50'
@@ -157,6 +161,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
               onChange={(e) =>
                 setFormData({ ...formData, contact: e.target.value })
               }
+              required
               id='contact'
               placeholder='eg. (+91 98765 43210)'
               className='w-full bg-background text-sm border border-txt-secondary/50 rounded-md px-4 py-2 mt-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50'
@@ -176,6 +181,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
               }
+              required
               id='email'
               placeholder='john.doe@eg.com'
               className='w-full bg-background text-sm border border-txt-secondary/50 rounded-md px-4 py-2 mt-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50'
@@ -198,6 +204,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
                   address: { ...formData.address, street: e.target.value },
                 })
               }
+              required
               id='street'
               placeholder='1234 Street Name'
               className='w-full bg-background text-sm border border-txt-secondary/50 rounded-md px-4 py-2 mt-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50'
@@ -220,6 +227,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
                   address: { ...formData.address, city: e.target.value },
                 })
               }
+              required
               id='city'
               placeholder='Mumbai'
               className='w-full bg-background text-sm border border-txt-secondary/50 rounded-md px-4 py-2 mt-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50'
@@ -242,6 +250,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
                   address: { ...formData.address, pinCode: e.target.value },
                 })
               }
+              required
               id='pinCode'
               placeholder='Pin Code eg. (400001)'
               className='w-full bg-background text-sm border border-txt-secondary/50 rounded-md px-4 py-2 mt-0.5 focus:outline-none focus:ring-2 focus:ring-primary/50'

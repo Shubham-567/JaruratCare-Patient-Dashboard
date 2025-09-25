@@ -50,6 +50,8 @@
 
   --color-txt-primary: var(--color-txt-primary);
   --color-txt-secondary: var(--color-txt-secondary);
+
+  --color-danger: hsl(0, 78%, 62%);
 }
 
 @layer utilities {
