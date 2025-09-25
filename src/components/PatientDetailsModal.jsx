@@ -63,8 +63,8 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
         <div className='my-4'>
           <h4 className='font-semibold mb-3'>Contact Information</h4>
 
-          <div className='grid md:grid-cols-2 items-start justify-between gap-4'>
-            <div className='flex items-start gap-4'>
+          <div className='grid md:grid-cols-2 items-start justify-between gap-3'>
+            <div className='flex items-start gap-3'>
               <Mail className='size-6 text-primary' />
               <div className='space-y-0.5'>
                 <p className='text-sm text-txt-secondary'>Email Address</p>
@@ -72,7 +72,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
               </div>
             </div>
 
-            <div className='flex items-start gap-4'>
+            <div className='flex items-start gap-3'>
               <MapPin className='size-6 text-primary' />
               <div className='space-y-0.5'>
                 <p className='text-sm text-txt-secondary'>Address</p>
@@ -83,7 +83,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
               </div>
             </div>
 
-            <div className='flex items-start gap-4'>
+            <div className='flex items-start gap-3'>
               <Phone className='size-6 text-primary' />
               <div className='space-y-0.5'>
                 <p className='text-sm text-txt-secondary'>Contact Number</p>
@@ -98,7 +98,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
           <h4 className='font-semibold mb-3'>Medical History</h4>
 
           <div className='grid md:grid-cols-2 items-start justify-between gap-4'>
-            <div className='flex items-start gap-4'>
+            <div className='flex items-start gap-3'>
               <Calendar className='size-6 text-primary' />
               <div className='space-y-0.5'>
                 <p className='text-sm text-txt-secondary'>Last Visit</p>
@@ -108,7 +108,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
               </div>
             </div>
 
-            <div className='flex items-start gap-4'>
+            <div className='flex items-start gap-3'>
               <Stethoscope className='size-6 text-primary' />
               <div className='space-y-0.5'>
                 <p className='text-sm text-txt-secondary'>Conditions</p>
@@ -126,7 +126,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
               </div>
             </div>
 
-            <div className='flex items-start gap-4'>
+            <div className='flex items-start gap-3'>
               <AlertTriangle className='size-6 text-primary' />
               <div className='space-y-0.5'>
                 <p className='text-sm text-txt-secondary'>Allergies</p>

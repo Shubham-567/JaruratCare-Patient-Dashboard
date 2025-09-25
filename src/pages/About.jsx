@@ -1,27 +1,7 @@
 import { BookOpen, Target } from "lucide-react";
 import TeamCard from "../components/TeamCard";
 import CallToAction from "../components/CallToAction";
-
-const teamMembers = [
-  {
-    name: "Dr. Priya Sharma",
-    role: "Co-Founder & CEO",
-    bio: "A practicing physician with 15 years of experience, Dr. Sharma provides the medical vision for our platform.",
-    avatarUrl: "https://picsum.photos/seed/founder1/200",
-  },
-  {
-    name: "Rohan Verma",
-    role: "Co-Founder & CTO",
-    bio: "Rohan is the architectural mastermind, ensuring our platform is secure, scalable, and cutting-edge.",
-    avatarUrl: "https://picsum.photos/seed/founder2/200",
-  },
-  {
-    name: "Aisha Khan",
-    role: "Head of Product Design",
-    bio: "Aisha crafts the intuitive and user-friendly experience that our clients love to use.",
-    avatarUrl: "https://picsum.photos/seed/founder3/200",
-  },
-];
+import { teamMembers } from "../constants";
 
 const About = () => {
   return (
@@ -31,15 +11,16 @@ const About = () => {
         <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold'>
           About Jarurat Care
         </h1>
-        <p className='py-3 max-w-xl sm:text-lg text-txt-secondary'>
-          Empowering healthcare professionals with tools as intelligent and
-          dedicated as they are.
+        <p className='py-3 max-w-2xl sm:text-lg text-txt-secondary'>
+          Jarurat Care is a cutting-edge platform that empowers healthcare
+          professionals to harness the power of patient data to deliver
+          exceptional patient care.
         </p>
       </section>
 
       {/* Mission and Story section */}
       <section className='py-10'>
-        <div className='relative card flex max-md:flex-col items-start gap-8 max-w-7xl mx-auto'>
+        <div className='relative card grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto'>
           {/* Mission  */}
           <div>
             <div className='flex items-center gap-4'>
@@ -48,17 +29,15 @@ const About = () => {
               </div>
               <h3 className='text-xl sm:text-2xl font-semibold'>Our Mission</h3>
             </div>
-            <p className='py-3 sm:text-lg text-txt-secondary mr-4'>
-              We believe technology's highest purpose is to serve humanity. In
-              healthcare, this means bridging the gap between complex medical
-              data and exceptional patient care. Our mission is to create
-              intuitive, powerful, and secure tools that free up professionals
-              to do what they do best: heal.
+            <p className='py-3 sm:text-lg text-txt-secondary'>
+              Our mission is to empower healthcare professionals by providing a
+              cutting-edge platform that empowers healthcare professionals to
+              harness the power of patient data to deliver exceptional patient
+              care.
               <br />
               <br />
-              At Jarurat Care, we're not just a platform; we're a community of
-              healthcare professionals dedicated to making healthcare better for
-              everyone.
+              Our platform is designed to help healthcare professionals harness
+              the power of patient data to deliver exceptional patient care.
             </p>
           </div>
 
@@ -74,14 +53,13 @@ const About = () => {
               <h3 className='text-xl sm:text-2xl font-semibold'>Our Story</h3>
             </div>
             <p className='py-3 sm:text-lg text-txt-secondary'>
-              Jarurat Care was born from a simple observation: the people
-              dedicated to caring for others were burdened by inefficient,
-              outdated systems. Co-founders Dr. Priya Sharma and Rohan Verma,
-              witnessing this friction firsthand, knew there had to be a better
-              way.
+              Jarurat Care was founded by a team of healthcare professionals who
+              recognized the need for a platform that could harness the power of
+              patient data to deliver exceptional patient care.
               <br />
               <br />
-              Dr. Sharma and Rohan Verma, two doctors with a shared passion for
+              Our platform is designed to help healthcare professionals harness
+              the power of patient data to deliver exceptional patient care.
             </p>
           </div>
         </div>
@@ -91,8 +69,9 @@ const About = () => {
       <section className='py-10'>
         <h2 className='section-heading'>Meet The Team</h2>
         <p className='section-description'>
-          A team united by a passion for improving healthcare through
-          technology.
+          We are a team of dedicated healthcare professionals who are passionate
+          about harnessing the power of patient data to deliver exceptional
+          patient care.
         </p>
 
         {/* Team members */}

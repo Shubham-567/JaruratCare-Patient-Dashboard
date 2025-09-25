@@ -11,7 +11,7 @@ const Footer = () => {
             <span className='text-2xl font-bold'>Jarurat Care</span>
           </div>
           <p className='text-sm text-txt-secondary'>
-            Intelligent Patient Data Management.
+            The Future of Patient Data Management is Here.
           </p>
         </div>
 

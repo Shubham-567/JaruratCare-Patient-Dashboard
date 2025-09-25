@@ -20,8 +20,9 @@ const Home = () => {
             <span className='text-primary'> Data Management </span>is Here.
           </h1>
           <p className='py-6 max-w-2xl sm:text-lg text-txt-secondary'>
-            Jarurat Care is an intelligent, streamlined platform designed to
-            give healthcare professionals the clarity and control they need.
+            Jarurat Care is a cutting-edge platform that empowers healthcare
+            professionals to harness the power of patient data to deliver
+            exceptional patient care.
           </p>
           <Link to='/patients'>
             <Button variant='primary' className='px-6 py-3'>
@@ -33,13 +34,11 @@ const Home = () => {
 
       {/* features section with bento grid */}
       <section className='py-10 my-10'>
-        <h2 className='section-heading'>
-          Everything you need. Nothing you don't.
-        </h2>
+        <h2 className='section-heading'>Why Jarurat Care?</h2>
 
         <p className='section-description'>
-          Discover a smarter way to manage patient records, from insights to
-          security.
+          Features that make Jarurat Care stand out and revolutionize patient
+          care management in healthcare.
         </p>
 
         <div className='grid grid-colo-2 lg:grid-cols-3 max-w-7xl mx-auto gap-4 mt-10'>
@@ -77,26 +76,25 @@ const Home = () => {
 
       {/* impact section */}
       <section className='py-10 my-10'>
-        <h2 className='section-heading'>Making a Measurable Difference</h2>
+        <h2 className='section-heading'>Making a Difference in Healthcare</h2>
         <p className='section-description'>
-          From individual clinics to large hospitals, Jarurat Care is
-          transforming workflows.
+          Here's how Jarurat Care is making a difference in healthcare for you.
         </p>
 
         <div className='grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 max-w-7xl mx-auto mt-10'>
           {/* review card */}
-          <div className='col-span-2 lg:col-span-1 row-span-2 card space-y-2'>
+          <div className='col-span-2 lg:col-span-1 row-span-2 card space-y-3'>
             <Quote className='size-8 text-primary' />
             <p className='text-sm sm:text-base lg:text-lg text-txt-secondary'>
-              "This platform has revolutionized how we handle patient data. It's
-              intuitive, secure, and has genuinely saved us hours every single
-              day. I can't imagine our workflow without it."
+              "Jarurat Care has transformed the way I manage patient data. It's
+              intuitive, secure, and has made my job easier. It's a
+              game-changer!"
             </p>
             <p className='text-sm sm:text-base'>
               <span className='font-semibold'>- Dr. Anjali Rao,</span>
               <br />
               <span className='text-txt-secondary'>
-                Chief Medical Officer, Nova Clinic
+                Chief Medical Officer, ABC Hospital
               </span>
             </p>
           </div>

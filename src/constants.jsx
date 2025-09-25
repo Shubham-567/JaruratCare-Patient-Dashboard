@@ -1,11 +1,11 @@
-import { Sparkles, ShieldCheck, LayoutDashboard, Activity } from "lucide-react";
+import { ShieldCheck, LayoutDashboard, Activity, Users } from "lucide-react";
 
 export const features = [
   {
-    title: "AI-Powered Insights",
+    title: "User-Friendly Interface",
     description:
-      "Automatically highlight critical patient data, potential risks, and follow-up reminders. Let our AI assist in proactive care.",
-    icon: <Sparkles className='size-6 text-primary' />,
+      "Our intuitive interface makes it easy for you to navigate and manage your patient data. You can add, view, and update patients with just a few clicks.",
+    icon: <Users className='size-6 text-primary' />,
   },
   {
     title: "Bank-Grade Security",
@@ -24,6 +24,27 @@ export const features = [
     description:
       "Monitor patient vitals and trends with our live, easy-to-read charts and graphs. Gain insights to optimize care.",
     icon: <Activity className='size-6 text-primary' />,
+  },
+];
+
+export const teamMembers = [
+  {
+    name: "Dr. Priya Sharma",
+    role: "Co-Founder & CEO",
+    bio: "A practicing physician with 15 years of experience, Dr. Sharma provides the medical vision for our platform.",
+    avatarUrl: "https://picsum.photos/seed/founder1/200",
+  },
+  {
+    name: "Rohan Verma",
+    role: "Co-Founder & CTO",
+    bio: "Rohan is the architectural mastermind, ensuring our platform is secure, scalable, and cutting-edge.",
+    avatarUrl: "https://picsum.photos/seed/founder2/200",
+  },
+  {
+    name: "Aisha Khan",
+    role: "Head of Product Design",
+    bio: "Aisha crafts the intuitive and user-friendly experience that our clients love to use.",
+    avatarUrl: "https://picsum.photos/seed/founder3/200",
   },
 ];
 
