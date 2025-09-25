@@ -8,7 +8,6 @@
   --color-primary-foreground: hsl(215, 25%, 88%);
 
   --color-secondary: hsl(188, 96%, 43%);
-  --color-accent: hsl(38, 95%, 50%);
 
   --color-background: hsl(220, 40%, 96%);
   --color-surface: hsl(0, 0%, 100%);
@@ -24,7 +23,6 @@
   --color-primary-foreground: hsl(215, 25%, 88%);
 
   --color-secondary: hsl(188, 96%, 43%);
-  --color-accent: hsl(38, 95%, 50%);
 
   --color-background: hsl(222, 47%, 11%);
   --color-surface: hsl(222, 40%, 15%);
@@ -41,9 +39,8 @@
   --color-primary-light: var(--color-primary-light);
   --color-primary-dark: var(--color-primary-dark);
   --color-primary-foreground: var(--color-primary-foreground);
-
+  
   --color-secondary: var(--color-secondary);
-  --color-accent: var(--color-accent);
 
   --color-background: var(--color-background);
   --color-surface: var(--color-surface);
@@ -72,6 +69,10 @@
   body {
     @apply bg-background text-txt-primary;
     font-family: "Inter", sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
   }
 }
 

@@ -28,21 +28,21 @@ const Navbar = () => {
 
   return (
     <header className='fixed top-0 left-0 right-0 z-40'>
-      <nav className='flex items-center justify-between gap-4 py-3 px-6 sm:px-13 md:px-18 lg:px-26 bg-surface/80 backdrop-blur-xl'>
+      <nav className='flex items-center justify-between gap-4 py-3 px-6 sm:px-13 md:px-18 lg:px-26 bg-surface/80 backdrop-blur'>
         <NavLink to='/' className='flex items-center gap-2'>
           <HeartPulse className='size-8 text-primary' />
           <span className='text-2xl font-bold text-nowrap'>Jarurat Care</span>
         </NavLink>
 
         <div className='flex items-center gap-4'>
-          <div className='max-md:hidden flex items-center gap-4 md:gap-8 bg-background rounded-4xl py-2 px-4 text-txt-secondary'>
+          <div className='max-md:hidden flex items-center gap-4 md:gap-8 bg-background rounded-4xl py-2 px-8 text-txt-secondary'>
             {links.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  `flex flex-col items-center hover:text-txt-primary-light font-medium ${
-                    isActive ? "text-primary" : ""
+                  `flex flex-col items-center font-semibold ${
+                    isActive ? "text-primary" : "hover:text-txt-primary "
                   }`
                 }>
                 {link.name}
@@ -80,7 +80,7 @@ const Navbar = () => {
                 to={link.to}
                 className={({ isActive }) =>
                   `flex flex-col items-center text-4xl tracking-wide font-bold ${
-                    isActive ? "text-primary" : ""
+                    isActive ? "text-primary" : "hover:text-primary"
                   }`
                 }
                 onClick={() => setIsOpen(false)}>

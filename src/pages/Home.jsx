@@ -15,7 +15,7 @@ const Home = () => {
         <div className='max-md:hidden absolute bottom-0 right-0 size-80 bg-primary/30 blur-[100px] rounded-full -z-10'></div>
 
         <div className='max-w-4xl mx-auto text-center'>
-          <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>
             The Future of Patient <br />
             <span className='text-primary'> Data Management </span>is Here.
           </h1>

@@ -75,7 +75,7 @@ const AddPatientModal = ({ onCLose, setPatients }) => {
     <div className='fixed top-0 left-0 w-full h-full px-6 flex items-center justify-center bg-background/80 z-50'>
       <div
         ref={modalRef}
-        className='relative bg-surface pb-6 pt-0 m rounded-lg shadow-lg max-w-lg max-h-[86vh] w-full min-w-[300px] overflow-y-scroll no-scrollbar'>
+        className='relative bg-surface ring ring-txt-secondary/20 pb-6 pt-0 m rounded-lg shadow-lg max-w-lg max-h-[86vh] w-full min-w-[300px] overflow-y-scroll no-scrollbar'>
         {/* modal heading */}
         <div className='sticky top-0 bg-surface flex items-center justify-between gap-4 px-6 pt-6 pb-4 z-10 border-b border-txt-secondary/20'>
           <h3 className='text-lg font-semibold'>Add Patient</h3>

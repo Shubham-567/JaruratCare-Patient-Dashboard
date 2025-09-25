@@ -34,7 +34,7 @@ const PatientDetailsModal = ({ patient, onCLose }) => {
     <div className='fixed top-0 left-0 w-full h-full px-6 flex items-center justify-center bg-background/80 z-50'>
       <div
         ref={modalRef}
-        className='relative bg-surface p-6 rounded-lg shadow-lg w-full max-w-lg min-w-[300px]'>
+        className='relative bg-surface ring ring-txt-secondary/20 p-6 rounded-lg shadow-lg w-full max-w-lg min-w-[300px]'>
         {/* patient Profile  */}
         <div className='flex items-center justify-between gap-4 pb-4'>
           <div className='flex items-center gap-4 px-4'>
